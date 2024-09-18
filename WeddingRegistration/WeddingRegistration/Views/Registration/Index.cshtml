@@ -1,3 +1,33 @@
 ﻿@{
     ViewData["Title"] = "Registration";
 }
+@model Registration
+
+
+<h1>Fill out the form to register for the wedding</h1>
+
+<form asp-action="AddRegistration" asp-controller="Registration" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <div>
+        <label asp-for="FirstName">Enter your First Name: </label>
+        <input type="text" id="first-name" asp-for="FirstName"/>
+    </div>
+
+    <div>
+        <label asp-for="LastName">Enter your Last Name: </label>
+        <input type="text" id="last-name" asp-for="LastName"/>
+    </div>
+
+    <div>
+        <label asp-for="NumberOfGuests">How many guests are you bringing?</label>
+        <input type="number" id="num-guests" asp-for="NumberOfGuests"/>
+    </div>
+
+    <div>
+        <label asp-for="Gifts">Enter the gifts you're bringing, comma separated: </label>
+        <input type="text" id="gifts" asp-for="Gifts"/>
+    </div>
+    
+    <button type="submit" id="submit-btn">Submit</button>
+</form>
