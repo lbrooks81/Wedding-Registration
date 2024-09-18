@@ -21,14 +21,15 @@ namespace WeddingRegistration.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddRegistration(Registration registration) 
+        public IActionResult Index(Registration registration) 
         {
             // ModelState will be invalid if any of the constraints are not met
             if (ModelState.IsValid) 
             {
                 registrations.Add(registration);
+                return View(new Registration());
             }
-            return RedirectToAction("Index");
+            return View(registration);
         }
 
 

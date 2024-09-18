@@ -6,8 +6,8 @@
 
 <h1>Fill out the form to register for the wedding</h1>
 
-<form asp-action="AddRegistration" asp-controller="Registration" method="post">
-    <div asp-validation-summary="All"></div>
+<form asp-action="Index" asp-controller="Registration" method="post" id="form">
+    <div asp-validation-summary="All" id="validation"></div>
 
     <div>
         <label asp-for="FirstName">Enter your First Name: </label>
@@ -29,5 +29,5 @@
         <input type="text" id="gifts" asp-for="Gifts"/>
     </div>
     
-    <button type="submit" id="submit-btn">Submit</button>
+    <button class="btn btn-primary" type="submit" id="submit-btn">Submit</button>
 </form>

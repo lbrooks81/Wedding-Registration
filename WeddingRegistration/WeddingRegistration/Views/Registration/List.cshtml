@@ -9,7 +9,7 @@
     <th>First Name</th>
     <th>Last Name</th>
     <th>Number of Guests</th>
-    <th>Number of Gifts</th>
+    <th>Gifts</th>
     </thead>
     <tbody>
         @foreach(Registration r in Model)
@@ -18,11 +18,7 @@
                 <td>@r.FirstName</td>
                 <td>@r.LastName</td>
                 <td>@r.NumberOfGuests</td>
-                <td>
-                    <a asp-controller="RegistrationList" asp-action="Gifts"> // TODO asp-route-id
-                        @r.Gifts.Count
-                    </a>
-                </td>
+                <td>@r.Gifts</td>
             </tr>
         }
 

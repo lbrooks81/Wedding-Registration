@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection.Metadata.Ecma335;
 
 namespace WeddingRegistration.Models
 {
@@ -13,12 +14,7 @@ namespace WeddingRegistration.Models
         [Required(ErrorMessage = "Please enter how many guests you are bringing.")]
         [Range(0, 20, ErrorMessage = "Number of guests must be positive.")]
         public int NumberOfGuests { get; set; }
-
-        public List<String> Gifts { get; set; } = [];
-        public int RegistrationId { get; set; } //TODO auto-increment
-
-        // Slug if needed
-        // public String Slug => $"{FirstName}-{LastName}";
         
+        public String? Gifts { get; set; }
     }
 }
