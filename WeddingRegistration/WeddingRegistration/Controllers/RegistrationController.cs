@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WeddingRegistration.Models;
 
+
 namespace WeddingRegistration.Controllers
 {
     public class RegistrationController : Controller
@@ -20,6 +21,8 @@ namespace WeddingRegistration.Controllers
             return View(new Registration());
         }
 
+
+
         [HttpPost]
         public IActionResult Index(Registration registration) 
         {
@@ -31,7 +34,5 @@ namespace WeddingRegistration.Controllers
             }
             return View(registration);
         }
-
-
     }
 }
