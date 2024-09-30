@@ -1,0 +1,35 @@
+﻿@model List<Registration>
+@{
+    ViewBag.Title = "Registration List";
+}
+
+<h1>Registration List</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Number of Guests</th>
+        <th>Gifts</th>
+    </thead>
+    <tbody>
+        @foreach (Registration r in Model)
+        {
+            <tr>
+                <td>
+                    <input asp-for="@r.FirstName" value="@r.FirstName" />
+                </td>
+                <td>
+                    <input asp-for="@r.LastName" value="@r.LastName" />
+                </td>
+                <td>
+                    <input asp-for="@r.NumberOfGuests" value="@r.NumberOfGuests" />
+                </td>
+                <td>
+                    <input asp-for="@r.Gifts" value="@r.Gifts" />
+                </td>
+            </tr>
+        }
+    </tbody>
+    <button class="btn btn-primary" asp-action="Create"></button>
+    <button></button>
+</table>

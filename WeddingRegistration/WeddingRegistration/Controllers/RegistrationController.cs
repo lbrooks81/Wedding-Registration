@@ -26,7 +26,6 @@ namespace WeddingRegistration.Controllers
         [HttpPost]
         public IActionResult Index(Registration registration) 
         {
-            // ModelState will be invalid if any of the constraints are not met
             if (ModelState.IsValid) 
             {
                 registrations.Add(registration);
