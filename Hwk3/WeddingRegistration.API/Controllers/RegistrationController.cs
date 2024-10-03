@@ -6,14 +6,15 @@ namespace WeddingRegistration.API.Controllers
 {
     [ApiController]
     [Route("v1/[controller]")]
-    public class RegistrationController : Controller
+    public class HomeController : Controller
     {
         private static List<Registration> registrations =
         [
-            new Registration("Glog", "Brooks", 15, "Glungnesh", 0),
-            new Registration("Gambluu", "Digle", 2, "", 1),
-            new Registration("Dogly", "Shane", 5, "Fire hose", 2)
+            new Registration("Logan", "Brooks", 4, "Champagne"),
+            new Registration("James", "Rangle", 2, "None"),
+            new Registration("Shane", "Bola", 5, "Crib")
         ];
+
         [HttpGet("GetAllRegistrations")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public IEnumerable<Registration> GetAllRegistrations() 
@@ -21,9 +22,9 @@ namespace WeddingRegistration.API.Controllers
             return registrations;
         }
 
-        [HttpGet("GetRegistration")]
+        [HttpGet("GetRegistrationFromId")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public Registration? GetRegistration([Required][FromQuery]int registrationId)
+        public Registration? GetRegistrationFromId([Required][FromQuery]int registrationId)
         {
             return registrations.FirstOrDefault(r => r.Id == registrationId);
         }
@@ -55,7 +56,7 @@ namespace WeddingRegistration.API.Controllers
             registration.Id = registrations.Max(r => r.Id) + 1;
             registrations.Add(registration);
 
-            return CreatedAtAction(nameof(GetRegistration), new { Id = registration.Id }, registration);
+            return CreatedAtAction(nameof(GetRegistrationFromId), new { Id = registration.Id }, registration);
         }
 
         [HttpDelete("DeleteRegistration")]

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection.Metadata.Ecma335;
 
 namespace WeddingRegistration.Shared.Models
@@ -18,14 +19,20 @@ namespace WeddingRegistration.Shared.Models
         public String? Gifts { get; set; }
         public int Id { get; set; }
 
-        public Registration(String firstName, String lastName, int numGuests, String? gifts, int id)
+        private static int CurrentId = 0;
+
+        public Registration()
+        {
+
+        }
+
+        public Registration(String firstName, String lastName, int numGuests, String? gifts)
         {
             FirstName = firstName;
             LastName = lastName;
-            Gifts = gifts;
             NumberOfGuests = numGuests;
-            Id = id;
-
+            Gifts = gifts;
+            Id = CurrentId++;
         }
     }
 }

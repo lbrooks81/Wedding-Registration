@@ -1,0 +1,46 @@
+﻿@model Registration
+@{
+
+}
+<h1>Create Registration</h1>
+
+<form asp-action="CreateRegistration" method="post">
+    <input type="hidden" asp-for="Id" value="0" />
+
+    <table class="table table-bordered table-striped">
+        <tr>
+            <td>First Name</td>
+            <td>
+                <input asp-for="FirstName" class="form-control" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input asp-for="LastName" class="form-control" required />
+            </td>
+        </tr>
+        <tr>
+            <td>Number of Guests</td>
+            <td>
+                <input asp-for="NumberOfGuests" type="number" 
+                class="d-inline-block form-control" 
+                style="width: calc(100% - 1.2em); margin-left: 0.2em;"
+                required/>
+            </td>
+        </tr>
+        <tr>
+            <td>Gifts</td>
+            <td>
+                <input asp-for="Gifts"
+                class="d-inline-block form-control"
+                style="width: calc(100% - 1.2em); margin-left: 0.2em;"
+                />
+            </td>
+        </tr>
+    </table>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-controller="Home" asp-action="Index"
+    class="btn btn-secondary">Home</a>
+</form>

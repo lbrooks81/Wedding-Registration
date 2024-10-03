@@ -3,7 +3,6 @@
     public static class Constants
     {
         public static String API_URL { get; private set; } = String.Empty;
-
         public static void SetAPI_URL(String url)
         {
             if (String.IsNullOrWhiteSpace(API_URL) == false)
@@ -13,6 +12,5 @@
 
             API_URL = url;
         }
-
     }
 }
