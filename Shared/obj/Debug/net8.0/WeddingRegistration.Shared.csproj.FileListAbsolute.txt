@@ -1,0 +1,12 @@
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\bin\Debug\net8.0\WeddingRegistration.Shared.deps.json
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\bin\Debug\net8.0\WeddingRegistration.Shared.dll
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\bin\Debug\net8.0\WeddingRegistration.Shared.pdb
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\WeddingRegistration.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\WeddingRegistration.Shared.AssemblyInfoInputs.cache
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\WeddingRegistration.Shared.AssemblyInfo.cs
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\WeddingRegistration.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\WeddingRegistration.Shared.sourcelink.json
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\WeddingRegistration.Shared.dll
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\refint\WeddingRegistration.Shared.dll
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\WeddingRegistration.Shared.pdb
+C:\Users\Glog\Documents\GitHub\it241-Server-Side-Web-Development\it241-weddingregistration-lbrooks81\Hwk3\Shared\obj\Debug\net8.0\ref\WeddingRegistration.Shared.dll
