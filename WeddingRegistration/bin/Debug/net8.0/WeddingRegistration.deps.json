@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WeddingRegistration/1.0.0": {
+        "dependencies": {
+          "WeddingRegistration.Shared": "1.0.0"
+        },
+        "runtime": {
+          "WeddingRegistration.dll": {}
+        }
+      },
+      "WeddingRegistration.Shared/1.0.0": {
+        "runtime": {
+          "WeddingRegistration.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeddingRegistration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WeddingRegistration.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
