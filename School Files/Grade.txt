@@ -1,0 +1,11 @@
+30/30 :)
+
+(-0.5) The parameter name given in the CreatedAtAction action result does not match the actual parameter name for GetRegistrationFromId.
+
+(-0.5) All API actions should return an ActionResult. You should use the IActionResult return type.
+
+(-2) The UI details show the gifts as the number of guests. The input field for number of guests is missing.
+
++2 E.C. for use of Bootstrap.
+
++1 E.C. for some validation and error handling for the API.
